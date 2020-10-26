@@ -26,6 +26,11 @@ export default new Router({
             path: "/admin",
             name: "admin",
             component: () => import(/* webpackChunkName: "admin-corner" */ "./components/AdminCorner.vue")
+        },
+        {
+            path: "/",
+            name: "home",
+            component: () => import(/* webpackChunkName: "admin-corner" */ "./components/Home.vue")
         }
     ]
 })
